@@ -3,13 +3,17 @@ package br.com.DAO;
 import br.com.DTO.FuncioDTO;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 
 public class FuncioDAO {
     
     Connection con;
     PreparedStatement pstm;
+    ResultSet rs;
+    ArrayList<FuncioDTO> lista = new ArrayList<>();
     
     public void CadastrarFuncio(FuncioDTO objFuncioDTO) throws ClassNotFoundException{
         
@@ -27,18 +31,20 @@ public class FuncioDAO {
                 + " ConvFarma, SegVida, TipoAdm, DefFis, DefFisTipo, DefFisDesc, Nacionalid, AnoCheg, FolhaLivro,"
                 + " PgINSS, PgIR, SEFIPOcor, Conta_Ctb, Altura, Peso, Dt_Demis, CodCidade, CodNaturalid, ExpGESP,"
                 + " Vinculo, FormaPgto, Jornada, SegDesemp, FPAdiant, CodAlimentacao, Chavebancaria, CodPessoaWeb,"
-                + " InterfExt, Cod_ExameCNH, Dt_ExameCNH,CNPJ_LabExame, UF_ExameCNH, CRM_ExamCNH, TrabParcial, Teletrabalho,"
+                + " InterfExt, Cod_ExameCNH, Dt_ExameCNH, CNPJ_LabExame, UF_ExameCNH, CRM_ExamCNH, TrabParcial, Teletrabalho,"
                 + " TrabIntermitente, Operador, Dt_Alter, Hr_Alter) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,"
-                + " ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,"
-                + " ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,"
-                + " ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,"
-                + " ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, )";
+                + " ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,"
+                + " ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,"
+                + " ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,"
+                + " ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,"
+                + " ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         
         con = new ConexaoDAO().conexaoBD();
         
         try {
             
             pstm = con.prepareStatement(sql);
+            
             pstm.setFloat(1, objFuncioDTO.getMatr());
             pstm.setString(2, objFuncioDTO.getNome());
             pstm.setString(3, objFuncioDTO.getNome_Guer());
@@ -82,102 +88,101 @@ public class FuncioDAO {
             pstm.setString(41, objFuncioDTO.getGrupoSang());
             pstm.setString(42, objFuncioDTO.getInstrucao());
             pstm.setString(43, objFuncioDTO.getRaca());
-            pstm.setString(45, objFuncioDTO.getEstCivil());
-            pstm.setString(46, objFuncioDTO.getEndereco());
-            pstm.setString(47, objFuncioDTO.getNumero());
-            pstm.setString(48, objFuncioDTO.getComplemento());
-            pstm.setString(49, objFuncioDTO.getBairro());
-            pstm.setString(50, objFuncioDTO.getCidade());
-            pstm.setString(51, objFuncioDTO.getUF());
-            pstm.setString(52, objFuncioDTO.getCEP());
-            pstm.setString(53, objFuncioDTO.getFone1());
-            pstm.setString(54, objFuncioDTO.getFone2());
-            pstm.setString(55, objFuncioDTO.getEmail());
-            pstm.setDate(56, objFuncioDTO.getDt_Nasc());
-            pstm.setString(57, objFuncioDTO.getSexo());
-            pstm.setString(58, objFuncioDTO.getNaturalid());
-            pstm.setString(59, objFuncioDTO.getPai());
-            pstm.setString(60, objFuncioDTO.getMae());
-            pstm.setString(61, objFuncioDTO.getConjuge());
-            pstm.setString(62, objFuncioDTO.getCNH());
-            pstm.setDate(63, objFuncioDTO.getDt_VenCNH());
-            pstm.setString(64, objFuncioDTO.getUF_CNH());
-            pstm.setString(65, objFuncioDTO.getCategoria());
-            pstm.setString(66, objFuncioDTO.getRG());
-            pstm.setString(67, objFuncioDTO.getOrgEmis());
-            pstm.setDate(68, objFuncioDTO.getRgDtEmis());
-            pstm.setString(69, objFuncioDTO.getCPF());
-            pstm.setString(70, objFuncioDTO.getPIS());
-            pstm.setString(71, objFuncioDTO.getReservista());
-            pstm.setString(72, objFuncioDTO.getReservCat());
-            pstm.setString(73, objFuncioDTO.getCTPS_Nro());
-            pstm.setString(74, objFuncioDTO.getCTPS_Serie());
-            pstm.setString(75, objFuncioDTO.getCTPS_UF());
-            pstm.setDate(76, objFuncioDTO.getCTPS_Emis());
-            pstm.setString(77, objFuncioDTO.getTitEleit());
-            pstm.setString(78, objFuncioDTO.getTitEZona());
-            pstm.setString(79, objFuncioDTO.getTitSecao());
-            pstm.setString(80, objFuncioDTO.getCt_Banco());
-            pstm.setString(81, objFuncioDTO.getCt_Agencia());
-            pstm.setString(82, objFuncioDTO.getCt_Conta());
-            pstm.setString(83, objFuncioDTO.getCt_CodOper());
-            pstm.setString(84, objFuncioDTO.getObs());
-            pstm.setFloat(85, objFuncioDTO.getSalario());
-            pstm.setString(86, objFuncioDTO.getSindicato());
-            pstm.setFloat(87, objFuncioDTO.getCHMes());
-            pstm.setFloat(88, objFuncioDTO.getCHSeman());
-            pstm.setFloat(89, objFuncioDTO.getHe_Periodo());
-            pstm.setString(90, objFuncioDTO.getDepIR());
-            pstm.setString(91, objFuncioDTO.getDepSF());
-            pstm.setDate(92, objFuncioDTO.getFGTSOpcao());
-            pstm.setString(93, objFuncioDTO.getFGTSBanco());
-            pstm.setString(94, objFuncioDTO.getFGTSAg());
-            pstm.setString(95, objFuncioDTO.getPgCtSin());
-            pstm.setString(96, objFuncioDTO.getAssMedic());
-            pstm.setString(97, objFuncioDTO.getDepAssMed());
-            pstm.setString(98, objFuncioDTO.getCestaBas());
-            pstm.setString(99, objFuncioDTO.getValeRef());
-            pstm.setString(100, objFuncioDTO.getConvFarma());
-            pstm.setString(101, objFuncioDTO.getSegVida());
-            pstm.setString(102, objFuncioDTO.getTipoAdm());
-            pstm.setString(103, objFuncioDTO.getDefFis());
-            pstm.setString(104, objFuncioDTO.getDefFisTipo());
-            pstm.setString(105, objFuncioDTO.getDefFisDesc());
-            pstm.setString(106, objFuncioDTO.getNacionalid());
-            pstm.setString(107, objFuncioDTO.getAnoCheg());
-            pstm.setString(108, objFuncioDTO.getFolhaLivro());
-            pstm.setString(109, objFuncioDTO.getPgINSS());
-            pstm.setString(110, objFuncioDTO.getPgIR());
-            pstm.setString(111, objFuncioDTO.getSEFIPOcor());
-            pstm.setString(112, objFuncioDTO.getConta_Ctb());
-            pstm.setFloat(113, objFuncioDTO.getAltura());
-            pstm.setFloat(114, objFuncioDTO.getPeso());
-            pstm.setDate(115, objFuncioDTO.getDt_Demis());
-            pstm.setFloat(116, objFuncioDTO.getCodCidade());
-            pstm.setFloat(117, objFuncioDTO.getCodNaturalid());
-            pstm.setString(118, objFuncioDTO.getExpGESP());
-            pstm.setString(119, objFuncioDTO.getVinculo());
-            pstm.setString(120, objFuncioDTO.getFormaPgto());
-            pstm.setFloat(121, objFuncioDTO.getJornada());
-            pstm.setString(122, objFuncioDTO.getSegDesemp());
-            pstm.setString(123, objFuncioDTO.getFPAdiant());
-            pstm.setString(124, objFuncioDTO.getCodAlimentacao());
-            pstm.setString(125, objFuncioDTO.getChavebancaria());
-            pstm.setFloat(126, objFuncioDTO.getCodPessoaWeb());
-            pstm.setString(127, objFuncioDTO.getInterfExt());
-            pstm.setString(128, objFuncioDTO.getCod_ExameCNH());
-            pstm.setDate(129, objFuncioDTO.getDt_ExameCNH());
-            pstm.setString(130, objFuncioDTO.getCNPJ_LabExame());
-            pstm.setString(131, objFuncioDTO.getUF_ExameCNH());
-            pstm.setString(132, objFuncioDTO.getCRM_ExamCNH());
-            pstm.setString(133, objFuncioDTO.getTrabParcial());
-            pstm.setString(134, objFuncioDTO.getTeletrabalho());
-            pstm.setString(135, objFuncioDTO.getTrabIntermitente());
-            pstm.setString(136, objFuncioDTO.getOperador());
-            pstm.setDate(137, objFuncioDTO.getDt_Alter());
-            pstm.setString(136, objFuncioDTO.getHr_Alter());
+            pstm.setString(44, objFuncioDTO.getEstCivil());
+            pstm.setString(45, objFuncioDTO.getEndereco());
+            pstm.setString(46, objFuncioDTO.getNumero());
+            pstm.setString(47, objFuncioDTO.getComplemento());
+            pstm.setString(48, objFuncioDTO.getBairro());
+            pstm.setString(49, objFuncioDTO.getCidade());
+            pstm.setString(50, objFuncioDTO.getUF());
+            pstm.setString(51, objFuncioDTO.getCEP());
+            pstm.setString(52, objFuncioDTO.getFone1());
+            pstm.setString(53, objFuncioDTO.getFone2());
+            pstm.setString(54, objFuncioDTO.getEmail());
+            pstm.setDate(55, objFuncioDTO.getDt_Nasc());
+            pstm.setString(56, objFuncioDTO.getSexo());
+            pstm.setString(57, objFuncioDTO.getNaturalid());
+            pstm.setString(58, objFuncioDTO.getPai());
+            pstm.setString(59, objFuncioDTO.getMae());
+            pstm.setString(60, objFuncioDTO.getConjuge());
+            pstm.setString(61, objFuncioDTO.getCNH());
+            pstm.setDate(62, objFuncioDTO.getDt_VenCNH());
+            pstm.setString(63, objFuncioDTO.getUF_CNH());
+            pstm.setString(64, objFuncioDTO.getCategoria());
+            pstm.setString(65, objFuncioDTO.getRG());
+            pstm.setString(66, objFuncioDTO.getOrgEmis());
+            pstm.setDate(67, objFuncioDTO.getRgDtEmis());
+            pstm.setString(68, objFuncioDTO.getCPF());
+            pstm.setString(69, objFuncioDTO.getPIS());
+            pstm.setString(70, objFuncioDTO.getReservista());
+            pstm.setString(71, objFuncioDTO.getReservCat());
+            pstm.setString(72, objFuncioDTO.getCTPS_Nro());
+            pstm.setString(73, objFuncioDTO.getCTPS_Serie());
+            pstm.setString(74, objFuncioDTO.getCTPS_UF());
+            pstm.setDate(75, objFuncioDTO.getCTPS_Emis());
+            pstm.setString(76, objFuncioDTO.getTitEleit());
+            pstm.setString(77, objFuncioDTO.getTitEZona());
+            pstm.setString(78, objFuncioDTO.getTitSecao());
+            pstm.setString(79, objFuncioDTO.getCt_Banco());
+            pstm.setString(80, objFuncioDTO.getCt_Agencia());
+            pstm.setString(81, objFuncioDTO.getCt_Conta());
+            pstm.setString(82, objFuncioDTO.getCt_CodOper());
+            pstm.setString(83, objFuncioDTO.getObs());
+            pstm.setFloat(84, objFuncioDTO.getSalario());
+            pstm.setString(85, objFuncioDTO.getSindicato());
+            pstm.setFloat(86, objFuncioDTO.getCHMes());
+            pstm.setFloat(87, objFuncioDTO.getCHSeman());
+            pstm.setFloat(88, objFuncioDTO.getHe_Periodo());
+            pstm.setString(89, objFuncioDTO.getDepIR());
+            pstm.setString(90, objFuncioDTO.getDepSF());
+            pstm.setDate(91, objFuncioDTO.getFGTSOpcao());
+            pstm.setString(92, objFuncioDTO.getFGTSBanco());
+            pstm.setString(93, objFuncioDTO.getFGTSAg());
+            pstm.setString(94, objFuncioDTO.getPgCtSin());
+            pstm.setString(95, objFuncioDTO.getAssMedic());
+            pstm.setString(96, objFuncioDTO.getDepAssMed());
+            pstm.setString(97, objFuncioDTO.getCestaBas());
+            pstm.setString(98, objFuncioDTO.getValeRef());
+            pstm.setString(99, objFuncioDTO.getConvFarma());
+            pstm.setString(100, objFuncioDTO.getSegVida());
+            pstm.setString(101, objFuncioDTO.getTipoAdm());
+            pstm.setString(102, objFuncioDTO.getDefFis());
+            pstm.setString(103, objFuncioDTO.getDefFisTipo());
+            pstm.setString(104, objFuncioDTO.getDefFisDesc());
+            pstm.setString(105, objFuncioDTO.getNacionalid());
+            pstm.setString(106, objFuncioDTO.getAnoCheg());
+            pstm.setString(107, objFuncioDTO.getFolhaLivro());
+            pstm.setString(108, objFuncioDTO.getPgINSS());
+            pstm.setString(109, objFuncioDTO.getPgIR());
+            pstm.setString(110, objFuncioDTO.getSEFIPOcor());
+            pstm.setString(111, objFuncioDTO.getConta_Ctb());
+            pstm.setFloat(112, objFuncioDTO.getAltura());
+            pstm.setFloat(113, objFuncioDTO.getPeso());
+            pstm.setDate(114, objFuncioDTO.getDt_Demis());
+            pstm.setFloat(115, objFuncioDTO.getCodCidade());
+            pstm.setFloat(116, objFuncioDTO.getCodNaturalid());
+            pstm.setString(117, objFuncioDTO.getExpGESP());
+            pstm.setString(118, objFuncioDTO.getVinculo());
+            pstm.setString(119, objFuncioDTO.getFormaPgto());
+            pstm.setFloat(120, objFuncioDTO.getJornada());
+            pstm.setString(121, objFuncioDTO.getSegDesemp());
+            pstm.setString(122, objFuncioDTO.getFPAdiant());
+            pstm.setString(123, objFuncioDTO.getCodAlimentacao());
+            pstm.setString(124, objFuncioDTO.getChavebancaria());
+            pstm.setFloat(125, objFuncioDTO.getCodPessoaWeb());
+            pstm.setString(126, objFuncioDTO.getInterfExt());
+            pstm.setString(127, objFuncioDTO.getCod_ExameCNH());
+            pstm.setDate(128, objFuncioDTO.getDt_ExameCNH());
+            pstm.setString(129, objFuncioDTO.getCNPJ_LabExame());
+            pstm.setString(130, objFuncioDTO.getUF_ExameCNH());
+            pstm.setString(131, objFuncioDTO.getCRM_ExamCNH());
+            pstm.setString(132, objFuncioDTO.getTrabParcial());
+            pstm.setString(133, objFuncioDTO.getTeletrabalho());
+            pstm.setString(134, objFuncioDTO.getTrabIntermitente());
+            pstm.setString(135, objFuncioDTO.getOperador());
+            pstm.setDate(136, objFuncioDTO.getDt_Alter());
+            pstm.setString(137, objFuncioDTO.getHr_Alter());
            
-            
            
             pstm.execute();
             pstm.close();
@@ -185,8 +190,31 @@ public class FuncioDAO {
         } catch (SQLException e) {
             
         }
-    
+        
     }
     
-    
+    public ArrayList<FuncioDTO> PesquisarFuncio() throws ClassNotFoundException{
+        
+       String sql = "select * from tb_funcionario";
+       con = new ConexaoDAO().conexaoBD();         
+       
+        try {
+            pstm = con.prepareStatement(sql);
+            rs = pstm.executeQuery(sql);
+            
+            while (rs.next()){
+                FuncioDTO objFuncioDTO = new FuncioDTO();
+                objFuncioDTO.setMatr(rs.getFloat("Matr"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                
+                lista.add(objFuncioDTO);
+                
+            }
+               
+        } catch (SQLException e) {
+            
+        }
+       
+        return lista;
+    }
 }
