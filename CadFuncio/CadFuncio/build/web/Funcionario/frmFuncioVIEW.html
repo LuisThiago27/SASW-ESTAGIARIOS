@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cadastro Funcionários</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 style="text-align:center">Cadastro do Funcionário </h1>
+        <form action="inserirFuncio.jsp" method="POST">
+            
+            <label>Matrícula do Funcionário: </label> <br>
+            <input type="text" name="matr" required><br>
+            
+            <br> <label>Nome do Funcionário: </label> <br>
+            <input type="text" name="nome" required><br>
+            
+            <br> <label>Nome Guer: </label> <br>
+            <input type="text" name="nome_guer" required><br>
+            
+            <br> <label>Código Filial: </label> <br>
+            <input type="text" name="codfil" required><br>
+            
+            <br> <label>Regional: </label> <br>
+            <input type="text" name="regional" required><br>
+            
+            <br> <label>Seção: </label> <br>
+            <input type="text" name="secao" required><br>
+            
+            <br> <label>C Custo: </label> <br>
+            <input type="text" name="ccusto" required><br>
+            
+            <br> <label>Código ponto: </label> <br>
+            <input type="text" name="codponto" required><br>
+            
+            <br> <label>Data Admissão: </label> <br>
+            <input type="date" name="dt_admis" required><br>
+            
+            <br> <label>Cargo: </label> <br>
+            <input type="text" name="cargo" required><br>
+            
+            <br> <label>Código Cargo: </label> <br>
+            <input type="text" name="codcargo" required><br>
+            
+            <br> <label>Apresentação: </label> <br>
+            <input type="text" name="apresen" required><br>
+            
+            <br> <label>Situação: </label> <br>
+            <input type="text" name="situacao" required><br>
+            
+            <br> <label>Data situação: </label> <br>
+            <input type="date" name="dt_situac" required><br>
+            
+            <br> <label>Escala: </label> <br>
+            <input type="text" name="escala" required><br>
+            
+            <br> <label>Horário: </label> <br>
+            <input type="text" name="horario" required><br>
+            
+            <br> <label>Grp Escala: </label> <br>
+            <input type="text" name="grpescala" required><br>
+            
+            <br> <label>Função: </label> <br>
+            <input type="text" name="funcao" required><br>
+            
+            <br> <label>Data Form Ini: </label> <br>
+            <input type="date" name="dt_formini" required><br>
+            
+            <br> <label>Data Form Fim: </label> <br>
+            <input type="date" name="dt_formfim" required><br>
+            
+            <br> <label>Local Form: </label> <br>
+            <input type="text" name="localform" required><br>
+            
+            <br> <label>Certificado: </label> <br>
+            <input type="text" name="certific" required><br>
+            
+            <br> <label>Reg PF: </label> <br>
+            <input type="text" name="reg_pf" required><br>
+            
+            <br> <label>Local PF: </label> <br>
+            <input type="text" name="local_pf" required><br>
+            
+            <br> <label>Reg PFUF: </label> <br>
+            <input type="text" name="reg_pfuf" required><br>
+            
+            <br> <label>Reg PFDT: </label> <br>
+            <input type="date" name="reg_pfdt" required><br>
+            
+            <br> <label>Car Nac Vig: </label> <br>
+            <input type="text" name="carnacvig" required><br>
+            
+            <br> <label>Data Val Cnv: </label> <br>
+            <input type="date" name="dtvalcnv" required><br>
+            
+            <br> <label>Data Emissão Cnv: </label> <br>
+            <input type="date" name="dtemissaocnv" required><br>
+            
+            <br> <label>Cadastro AFIS: </label> <br>
+            <input type="text" name="cadastroafis" required><br>
+            
+            <br> <label>Reg MT: </label> <br>
+            <input type="text" name="reg_mt" required><br>
+            
+            <br> <label>Data Recicl: </label> <br>
+            <input type="date" name="dt_recicl" required><br>
+            
+            <br> <label>Data Vencurs: </label> <br>
+            <input type="date" name="dt_vencurs" required><br>
+            
+            <br> <label>Data Exame me: </label> <br>
+            <input type="date" name="dt_exameme" required><br>
+            
+            <br> <label>Data Psico: </label> <br>
+            <input type="date" name="dt_psico" required><br>
+            
+            <br> <label>Extensão TV: </label> <br>
+            <input type="text" name="extensaotv" required><br>
+            
+            <br> <label>Ext Seg Pes: </label> <br>
+            <input type="text" name="extsegpes" required><br>
+            
+            <br> <label>Ext Escolta: </label> <br>
+            <input type="text" name="extescolta" required><br>
+            
+            <br> <label>Ext Grd Eventos: </label> <br>
+            <input type="text" name="extgrdeventos" required><br>
+            
+            <br> <label>Ext Armas não letais: </label> <br>
+            <input type="text" name="extarmasnletais" required><br>
+            
+            <br> <label>Grupo Sang: </label> <br>
+            <input type="text" name="gruposang" required><br>
+            
+            <br> <label>Instrução: </label> <br>
+            <input type="text" name="instrucao" required><br>
+            
+            <br> <label>Raça: </label> <br>
+            <input type="text" name="raca" required><br>
+            
+            <br> <label>Estado Civil: </label> <br>
+            <input type="text" name="estcivil" required><br>
+            
+            <br> <label>Endereço: </label> <br>
+            <input type="text" name="endereco" required><br>
+            
+            <br> <label>Número: </label> <br>
+            <input type="text" name="numero" required><br>
+            
+            <br> <label>Complemento: </label> <br>
+            <input type="text" name="complemento" required><br>
+            
+            <br> <label>Bairro: </label> <br>
+            <input type="text" name="bairro" required><br>
+            
+            <br> <label>Cidade: </label> <br>
+            <input type="text" name="cidade" required><br>
+            
+            <br> <label>UF: </label> <br>
+            <input type="text" name="uf" required><br>
+            
+            <br> <label>CEP: </label> <br>
+            <input type="text" name="cep" required><br>
+            
+            <br> <label>Telefone 1: </label> <br>
+            <input type="tel" name="fone1" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required><br>
+            
+            <br> <label>Telefone 2: </label> <br>
+            <input type="tel" name="fone2" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" required><br>
+            
+            <br> <label>Email: </label> <br>
+            <input type="email" name="email" required><br>
+            
+            <br> <label>Data de nascimento: </label> <br>
+            <input type="date" name="dt_nasc" required><br>
+            
+            <br> <label>Sexo: </label> <br>
+            <input type="text" name="sexo" required><br>
+            
+            <br> <label>Naturalidade: </label> <br>
+            <input type="text" name="naturalid" required><br>
+            
+            <br> <label>Pai: </label> <br>
+            <input type="text" name="pai" required><br>
+            
+            <br> <label>Mãe: </label> <br>
+            <input type="text" name="mae" required><br>
+            
+            <br> <label>Conjuge: </label> <br>
+            <input type="text" name="conjuge" required><br>
+            
+            <br> <label>CNH: </label> <br>
+            <input type="text" name="cnh" required><br>
+            
+            <br> <label>Data de vencimento CNH: </label> <br>
+            <input type="date" name="dt_vencnh" required><br>
+            
+            <br> <label>UF da CNH: </label> <br>
+            <input type="text" name="uf_cnh" required><br>
+            
+            <br> <label>Categoria CNH: </label> <br>
+            <input type="text" name="categoria" required><br>
+            
+            <br> <label>RG: </label> <br>
+            <input type="text" name="rg" required><br>
+            
+            <br> <label>Orgão Emissor: </label> <br>
+            <input type="text" name="orgemis" required><br>
+            
+            <br> <label>Data de emissão RG: </label> <br>
+            <input type="date" name="rgdtemis" required><br>
+            
+            <br> <label>CPF: </label> <br>
+            <input type="text" name="cpf" required><br>
+            
+            <br> <label>PIS: </label> <br>
+            <input type="text" name="pis" required><br>
+            
+            <br> <label>Reservista: </label> <br>
+            <input type="text" name="reservista" required><br>
+            
+            <br> <label>Reservista categoria: </label> <br>
+            <input type="text" name="reservcat" required><br>
+            
+            <br> <label>Número CTPS: </label> <br>
+            <input type="text" name="ctps_nro" required><br>
+            
+            <br> <label>Série CTPS: </label> <br>
+            <input type="text" name="ctps_serie" required><br>
+            
+            <br> <label>UF CTPS: </label> <br>
+            <input type="text" name="ctps_uf" required><br>
+            
+            <br> <label>Data emissão CTPS: </label> <br>
+            <input type="date" name="ctps_emis" required><br>
+            
+            <br> <label>Título de eleitor: </label> <br>
+            <input type="text" name="titeleit" required><br>
+            
+            <br> <label>Zona: </label> <br>
+            <input type="text" name="titezona" required><br>
+            
+            <br> <label>Seção: </label> <br>
+            <input type="text" name="titsecao" required><br>
+            
+            <br> <label>Ct banco: </label> <br>
+            <input type="text" name="ct_banco" required><br>
+            
+            <br> <label>Ct agência: </label> <br>
+            <input type="text" name="ct_agencia" required><br>
+            
+            <br> <label>Ct conta: </label> <br>
+            <input type="text" name="ct_conta" required><br>
+            
+            <br> <label>Ct código oper: </label> <br>
+            <input type="text" name="ct_codoper" required><br>
+            
+            <br> <label>Obs: </label> <br>
+            <input type="text" name="obs" required><br>
+            
+            <br> <label>Salário: </label> <br>
+            <input type="text" name="salario" required><br>
+            
+            <br> <label>Sindicato: </label> <br>
+            <input type="text" name="sindicato" required><br>
+            
+            <br> <label>CH mês: </label> <br>
+            <input type="text" name="chmes" required><br>
+            
+            <br> <label>CH semana: </label> <br>
+            <input type="text" name="chseman" required><br>
+            
+            <br> <label>HE período: </label> <br>
+            <input type="text" name="he_periodo" required><br>
+            
+            <br> <label>Dep IR: </label> <br>
+            <input type="text" name="depir" required><br>
+            
+            <br> <label>Dep SF: </label> <br>
+            <input type="text" name="depsf" required><br>
+            
+            <br> <label>Opção FGTS: </label> <br>
+            <input type="date" name="fgtsopcao" required><br>
+            
+            <br> <label>Banco FGTS: </label> <br>
+            <input type="text" name="fgtsbanco" required><br>
+            
+            <br> <label>Agência FGTS: </label> <br>
+            <input type="text" name="fgtsag" required><br>
+            
+            <br> <label>Pg Ct Sin: </label> <br>
+            <input type="text" name="pgctsin" required><br>
+            
+            <br> <label>Ass Médico: </label> <br>
+            <input type="text" name="assmedic" required><br>
+            
+            <br> <label>Dep Ass Médico: </label> <br>
+            <input type="text" name="depassmed" required><br>
+            
+            <br> <label>Cesta básica: </label> <br>
+            <input type="text" name="cestabas" required><br>
+            
+            <br> <label>Vale refeição: </label> <br>
+            <input type="text" name="valeref" required><br>
+            
+            <br> <label>Convênio Farma: </label> <br>
+            <input type="text" name="convfarma" required><br>
+            
+            <br> <label>Seguro de vida: </label> <br>
+            <input type="text" name="segvida" required><br>
+            
+            <br> <label>Tipo Adm: </label> <br>
+            <input type="text" name="tipoadm" required><br>
+            
+            <br> <label>Def Fis: </label> <br>
+            <input type="text" name="deffis" required><br>
+            
+            <br> <label>Def Fis Tipo: </label> <br>
+            <input type="text" name="deffistipo" required><br>
+            
+            <br> <label>Def Fis Descrição: </label> <br>
+            <input type="text" name="deffisdesc" required><br>
+            
+            <br> <label>Nacionalidade: </label> <br>
+            <input type="text" name="nacionalid" required><br>
+            
+            <br> <label>Ano de chegada: </label> <br>
+            <input type="text" name="anocheg" required><br>
+            
+            <br> <label>Folha livro: </label> <br>
+            <input type="text" name="folhalivro" required><br>
+            
+            <br> <label>Pg INSS: </label> <br>
+            <input type="text" name="pginss" required><br>
+            
+            <br> <label>Pg IR: </label> <br>
+            <input type="text" name="pgir" required><br>
+            
+            <br> <label>SEFIPO cor: </label> <br>
+            <input type="text" name="sefipocor" required><br>
+            
+            <br> <label>Conta ctb: </label> <br>
+            <input type="text" name="conta_ctb" required><br>
+            
+            <br> <label>Altura: </label> <br>
+            <input type="text" name="altura" required><br>
+            
+            <br> <label>Peso: </label> <br>
+            <input type="text" name="peso" required><br>
+            
+            <br> <label>Data demissão: </label> <br>
+            <input type="date" name="dt_demis" required><br>
+            
+            <br> <label>Código Cidade: </label> <br>
+            <input type="text" name="codcidade" required><br>
+            
+            <br> <label>Código naturalidade: </label> <br>
+            <input type="text" name="cod_naturalid" required><br>
+            
+            <br> <label>Exp Gesp: </label> <br>
+            <input type="text" name="expgesp" required><br>
+            
+            <br> <label>Vínculo: </label> <br>
+            <input type="text" name="vinculo" required><br>
+            
+            <br> <label>Forma de pagamento: </label> <br>
+            <input type="text" name="formapgto" required><br>
+            
+            <br> <label>Jornada de trabalho: </label> <br>
+            <input type="text" name="jornada" required><br>
+            
+            <br> <label>Seg desemp: </label> <br>
+            <input type="text" name="segdesemp" required><br>
+            
+            <br> <label>FP adiantado: </label> <br>
+            <input type="text" name="fpadiant" required><br>
+            
+            <br> <label>Código Alimentação: </label> <br>
+            <input type="text" name="codalimentacao" required><br>
+            
+            <br> <label>Chave bancária: </label> <br>
+            <input type="text" name="chavebancaria" required><br>
+            
+            <br> <label>Código pessoa web: </label> <br>
+            <input type="text" name="codpessoaweb" required><br>
+            
+            <br> <label>Interf Ext: </label> <br>
+            <input type="text" name="interfext" required><br>
+            
+            <br> <label>Código exame CNH: </label> <br>
+            <input type="text" name="cod_examecnh" required><br>
+            
+            <br> <label>Data exame CNH: </label> <br>
+            <input type="date" name="dt_examecnh" required><br>
+            
+            <br> <label>CNPJ lab exame: </label> <br>
+            <input type="text" name="cnpj_labexame" required><br>
+            
+            <br> <label>UF exame CNH: </label> <br>
+            <input type="text" name="uf_examecnh" required><br>
+            
+            <br> <label>CRM exame CNH: </label> <br>
+            <input type="text" name="crm_examcnh" required><br>
+            
+            <br> <label>Trab Parcial: </label> <br>
+            <input type="text" name="trabparcial" required><br>
+            
+            <br> <label>Teletrabalho: </label> <br>
+            <input type="text" name="teletrabalho" required><br>
+            
+            <br> <label>Trabalho intermitente: </label> <br>
+            <input type="text" name="trabintermitente" required><br>
+            
+            <br> <label>Operador: </label> <br>
+            <input type="text" name="operador" required><br>
+            
+            <br> <label>Data alteração: </label> <br>
+            <input type="date" name="dt_alter" required><br>
+            
+            <br> <label>Hora alteração: </label> <br>
+            <input type="text" name="hr_alter" required><br>
+            
+            
+            <br> <button type="submit" > Cadastrar </button>
+         
+        </form>    
+    </body>
+</html>
