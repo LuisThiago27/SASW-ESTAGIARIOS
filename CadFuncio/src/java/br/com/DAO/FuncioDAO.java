@@ -53,33 +53,33 @@ public class FuncioDAO {
             pstm.setString(6, objFuncioDTO.getSecao());
             pstm.setString(7, objFuncioDTO.getCCusto());
             pstm.setString(8, objFuncioDTO.getCodPonto());
-            pstm.setDate(9, objFuncioDTO.getDt_Admis());
+            pstm.setString(9, objFuncioDTO.getDt_Admis());
             pstm.setString(10, objFuncioDTO.getCargo());
             pstm.setFloat(11, objFuncioDTO.getCodCargo());
             pstm.setString(12, objFuncioDTO.getApresen());
             pstm.setString(13, objFuncioDTO.getSituacao());
-            pstm.setDate(14, objFuncioDTO.getDt_Situac());
+            pstm.setString(14, objFuncioDTO.getDt_Situac());
             pstm.setString(15, objFuncioDTO.getEscala());
             pstm.setFloat(16, objFuncioDTO.getHorario());
             pstm.setFloat(17, objFuncioDTO.getGrpEscala());
             pstm.setString(18, objFuncioDTO.getFuncao());
-            pstm.setDate(19, objFuncioDTO.getDt_FormIni());
-            pstm.setDate(20, objFuncioDTO.getDt_FormFim());
+            pstm.setString(19, objFuncioDTO.getDt_FormIni());
+            pstm.setString(20, objFuncioDTO.getDt_FormFim());
             pstm.setString(21, objFuncioDTO.getLocalForm());
             pstm.setString(22, objFuncioDTO.getCertific());
             pstm.setString(23, objFuncioDTO.getReg_PF());
             pstm.setString(24, objFuncioDTO.getLocal_PF());
             pstm.setString(25, objFuncioDTO.getReg_PFUF());
-            pstm.setDate(26, objFuncioDTO.getReg_PFDt());
+            pstm.setString(26, objFuncioDTO.getReg_PFDt());
             pstm.setString(27, objFuncioDTO.getCarNacVig());
-            pstm.setDate(28, objFuncioDTO.getDtValCNV());
-            pstm.setDate(29, objFuncioDTO.getDtEmissaoCNV());
+            pstm.setString(28, objFuncioDTO.getDtValCNV());
+            pstm.setString(29, objFuncioDTO.getDtEmissaoCNV());
             pstm.setString(30, objFuncioDTO.getCadastroAFIS());
             pstm.setString(31, objFuncioDTO.getReg_MT());
-            pstm.setDate(32, objFuncioDTO.getDt_Recicl());
-            pstm.setDate(33, objFuncioDTO.getDt_VenCurs());
-            pstm.setDate(34, objFuncioDTO.getDt_ExameMe());
-            pstm.setDate(35, objFuncioDTO.getDt_Psico());
+            pstm.setString(32, objFuncioDTO.getDt_Recicl());
+            pstm.setString(33, objFuncioDTO.getDt_VenCurs());
+            pstm.setString(34, objFuncioDTO.getDt_ExameMe());
+            pstm.setString(35, objFuncioDTO.getDt_Psico());
             pstm.setString(36, objFuncioDTO.getExtensaoTV());
             pstm.setString(37, objFuncioDTO.getExtSegPes());
             pstm.setString(38, objFuncioDTO.getExtEscolta());
@@ -99,19 +99,19 @@ public class FuncioDAO {
             pstm.setString(52, objFuncioDTO.getFone1());
             pstm.setString(53, objFuncioDTO.getFone2());
             pstm.setString(54, objFuncioDTO.getEmail());
-            pstm.setDate(55, objFuncioDTO.getDt_Nasc());
+            pstm.setString(55, objFuncioDTO.getDt_Nasc());
             pstm.setString(56, objFuncioDTO.getSexo());
             pstm.setString(57, objFuncioDTO.getNaturalid());
             pstm.setString(58, objFuncioDTO.getPai());
             pstm.setString(59, objFuncioDTO.getMae());
             pstm.setString(60, objFuncioDTO.getConjuge());
             pstm.setString(61, objFuncioDTO.getCNH());
-            pstm.setDate(62, objFuncioDTO.getDt_VenCNH());
+            pstm.setString(62, objFuncioDTO.getDt_VenCNH());
             pstm.setString(63, objFuncioDTO.getUF_CNH());
             pstm.setString(64, objFuncioDTO.getCategoria());
             pstm.setString(65, objFuncioDTO.getRG());
             pstm.setString(66, objFuncioDTO.getOrgEmis());
-            pstm.setDate(67, objFuncioDTO.getRgDtEmis());
+            pstm.setString(67, objFuncioDTO.getRgDtEmis());
             pstm.setString(68, objFuncioDTO.getCPF());
             pstm.setString(69, objFuncioDTO.getPIS());
             pstm.setString(70, objFuncioDTO.getReservista());
@@ -119,7 +119,7 @@ public class FuncioDAO {
             pstm.setString(72, objFuncioDTO.getCTPS_Nro());
             pstm.setString(73, objFuncioDTO.getCTPS_Serie());
             pstm.setString(74, objFuncioDTO.getCTPS_UF());
-            pstm.setDate(75, objFuncioDTO.getCTPS_Emis());
+            pstm.setString(75, objFuncioDTO.getCTPS_Emis());
             pstm.setString(76, objFuncioDTO.getTitEleit());
             pstm.setString(77, objFuncioDTO.getTitEZona());
             pstm.setString(78, objFuncioDTO.getTitSecao());
@@ -135,7 +135,7 @@ public class FuncioDAO {
             pstm.setFloat(88, objFuncioDTO.getHe_Periodo());
             pstm.setString(89, objFuncioDTO.getDepIR());
             pstm.setString(90, objFuncioDTO.getDepSF());
-            pstm.setDate(91, objFuncioDTO.getFGTSOpcao());
+            pstm.setString(91, objFuncioDTO.getFGTSOpcao());
             pstm.setString(92, objFuncioDTO.getFGTSBanco());
             pstm.setString(93, objFuncioDTO.getFGTSAg());
             pstm.setString(94, objFuncioDTO.getPgCtSin());
@@ -158,7 +158,7 @@ public class FuncioDAO {
             pstm.setString(111, objFuncioDTO.getConta_Ctb());
             pstm.setFloat(112, objFuncioDTO.getAltura());
             pstm.setFloat(113, objFuncioDTO.getPeso());
-            pstm.setDate(114, objFuncioDTO.getDt_Demis());
+            pstm.setString(114, objFuncioDTO.getDt_Demis());
             pstm.setFloat(115, objFuncioDTO.getCodCidade());
             pstm.setFloat(116, objFuncioDTO.getCodNaturalid());
             pstm.setString(117, objFuncioDTO.getExpGESP());
@@ -172,7 +172,7 @@ public class FuncioDAO {
             pstm.setFloat(125, objFuncioDTO.getCodPessoaWeb());
             pstm.setString(126, objFuncioDTO.getInterfExt());
             pstm.setString(127, objFuncioDTO.getCod_ExameCNH());
-            pstm.setDate(128, objFuncioDTO.getDt_ExameCNH());
+            pstm.setString(128, objFuncioDTO.getDt_ExameCNH());
             pstm.setString(129, objFuncioDTO.getCNPJ_LabExame());
             pstm.setString(130, objFuncioDTO.getUF_ExameCNH());
             pstm.setString(131, objFuncioDTO.getCRM_ExamCNH());
@@ -180,7 +180,7 @@ public class FuncioDAO {
             pstm.setString(133, objFuncioDTO.getTeletrabalho());
             pstm.setString(134, objFuncioDTO.getTrabIntermitente());
             pstm.setString(135, objFuncioDTO.getOperador());
-            pstm.setDate(136, objFuncioDTO.getDt_Alter());
+            pstm.setString(136, objFuncioDTO.getDt_Alter());
             pstm.setString(137, objFuncioDTO.getHr_Alter());
            
            
@@ -190,7 +190,6 @@ public class FuncioDAO {
         } catch (SQLException e) {
             
         }
-        
     }
     
     public ArrayList<FuncioDTO> PesquisarFuncio() throws ClassNotFoundException{
@@ -206,6 +205,93 @@ public class FuncioDAO {
                 FuncioDTO objFuncioDTO = new FuncioDTO();
                 objFuncioDTO.setMatr(rs.getFloat("Matr"));
                 objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome_Guer(rs.getString("Nome_Guer"));
+                objFuncioDTO.setCodFil(rs.getFloat("CodFil"));
+                objFuncioDTO.setRegional(rs.getFloat("Regional"));
+                objFuncioDTO.setSecao(rs.getString("Secao"));
+                objFuncioDTO.setCCusto(rs.getString("CCusto"));
+                objFuncioDTO.setCodPonto(rs.getString("CodPonto"));
+                objFuncioDTO.setDt_Admis(rs.getString("Dt_Admis"));
+                objFuncioDTO.setCargo(rs.getString("Cargo"));
+                objFuncioDTO.setCodCargo(rs.getFloat("CodCargo"));
+                objFuncioDTO.setApresen(rs.getString("Apresen"));
+                objFuncioDTO.setSituacao(rs.getString("Situacao"));
+                objFuncioDTO.setDt_Situac(rs.getString("Dt_Situac"));
+                objFuncioDTO.setEscala(rs.getString("Escala"));
+                objFuncioDTO.setHorario(rs.getFloat("Horario"));
+                objFuncioDTO.setGrpEscala(rs.getFloat("GrpEscala"));
+                objFuncioDTO.setFuncao(rs.getString("Funcao"));
+                objFuncioDTO.setDt_FormIni(rs.getString("Dt_FormIni"));
+                objFuncioDTO.setDt_FormFim(rs.getString("Dt_FormFim"));
+                objFuncioDTO.setLocalForm(rs.getString("LocalForm"));
+                objFuncioDTO.setCertific(rs.getString("Certific"));
+                objFuncioDTO.setReg_PF(rs.getString("Reg_PF"));
+                objFuncioDTO.setLocal_PF(rs.getString("Local_PF"));
+                objFuncioDTO.setReg_PFUF(rs.getString("Reg_PFUF"));
+                objFuncioDTO.setReg_PFDt(rs.getString("Reg_PFDt"));
+                objFuncioDTO.setCarNacVig(rs.getString("CarNacVig"));
+                objFuncioDTO.setDtValCNV(rs.getString("DtValCNV"));
+                objFuncioDTO.setDtEmissaoCNV(rs.getString("DtEmissaoCNV"));
+                objFuncioDTO.setCadastroAFIS(rs.getString("CadastroAFIS"));
+                objFuncioDTO.setReg_MT(rs.getString("Reg_MT"));
+                objFuncioDTO.setDt_Recicl(rs.getString("Dt_Recicl"));
+                objFuncioDTO.setDt_VenCurs(rs.getString("Dt_VenCurs"));
+                objFuncioDTO.setDt_ExameMe(rs.getString("Dt_Exameme"));
+                objFuncioDTO.setDt_Psico(rs.getString("Dt_Psico"));
+                objFuncioDTO.setExtensaoTV(rs.getString("ExtensaoTV"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                objFuncioDTO.setNome(rs.getString("Nome"));
+                
+                
                 
                 lista.add(objFuncioDTO);
                 

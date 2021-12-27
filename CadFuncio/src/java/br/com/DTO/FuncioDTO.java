@@ -1,7 +1,5 @@
 package br.com.DTO;
 
-import java.sql.Date;
-
 
 public class FuncioDTO {
     private String Nome, Nome_Guer, Secao, CCusto, CodPonto, Cargo, Apresen, Situacao, Escala, Funcao, LocalForm,
@@ -14,17 +12,13 @@ public class FuncioDTO {
             TipoAdm, DefFis, DefFisTipo, DefFisDesc, Nacionalid, AnoCheg, FolhaLivro, PgINSS, PgIR, SEFIPOcor,
             Conta_Ctb, ExpGESP, Vinculo, FormaPgto, SegDesemp, FPAdiant, CodAlimentacao, Chavebancaria, InterfExt,
             Cod_ExameCNH, CNPJ_LabExame, UF_ExameCNH, CRM_ExamCNH, TrabParcial, Teletrabalho, TrabIntermitente,
-            Operador, Hr_Alter;
+            Operador, Hr_Alter, Dt_Admis, Dt_Situac, Dt_FormIni, Dt_FormFim, Reg_PFDt, DtValCNV, DtEmissaoCNV, Dt_Recicl,
+            Dt_VenCurs, Dt_ExameMe, Dt_Psico, Dt_Nasc, Dt_VenCNH, RgDtEmis, CTPS_Emis, FGTSOpcao, Dt_Demis, 
+            Dt_ExameCNH, Dt_Alter;
     
     private float Matr, CodFil, CodCargo, Salario, CHMes, CHSeman, He_Periodo, Altura, Peso, CodCidade, CodNaturalid,
             Jornada, CodPessoaWeb, Regional, Horario, GrpEscala;
-    
-    private Date Dt_Admis, Dt_Situac, Dt_FormIni, Dt_FormFim, Reg_PFDt, DtValCNV, DtEmissaoCNV, Dt_Recicl,
-            Dt_VenCurs, Dt_ExameMe, Dt_Psico, Dt_Nasc, Dt_VenCNH, RgDtEmis, CTPS_Emis, FGTSOpcao, Dt_Demis, 
-            Dt_ExameCNH, Dt_Alter;
 
-    
-    
     public String getNome() {
         return Nome;
     }
@@ -841,6 +835,158 @@ public class FuncioDTO {
         this.Hr_Alter = Hr_Alter;
     }
 
+    public String getDt_Admis() {
+        return Dt_Admis;
+    }
+
+    public void setDt_Admis(String Dt_Admis) {
+        this.Dt_Admis = Dt_Admis;
+    }
+
+    public String getDt_Situac() {
+        return Dt_Situac;
+    }
+
+    public void setDt_Situac(String Dt_Situac) {
+        this.Dt_Situac = Dt_Situac;
+    }
+
+    public String getDt_FormIni() {
+        return Dt_FormIni;
+    }
+
+    public void setDt_FormIni(String Dt_FormIni) {
+        this.Dt_FormIni = Dt_FormIni;
+    }
+
+    public String getDt_FormFim() {
+        return Dt_FormFim;
+    }
+
+    public void setDt_FormFim(String Dt_FormFim) {
+        this.Dt_FormFim = Dt_FormFim;
+    }
+
+    public String getReg_PFDt() {
+        return Reg_PFDt;
+    }
+
+    public void setReg_PFDt(String Reg_PFDt) {
+        this.Reg_PFDt = Reg_PFDt;
+    }
+
+    public String getDtValCNV() {
+        return DtValCNV;
+    }
+
+    public void setDtValCNV(String DtValCNV) {
+        this.DtValCNV = DtValCNV;
+    }
+
+    public String getDtEmissaoCNV() {
+        return DtEmissaoCNV;
+    }
+
+    public void setDtEmissaoCNV(String DtEmissaoCNV) {
+        this.DtEmissaoCNV = DtEmissaoCNV;
+    }
+
+    public String getDt_Recicl() {
+        return Dt_Recicl;
+    }
+
+    public void setDt_Recicl(String Dt_Recicl) {
+        this.Dt_Recicl = Dt_Recicl;
+    }
+
+    public String getDt_VenCurs() {
+        return Dt_VenCurs;
+    }
+
+    public void setDt_VenCurs(String Dt_VenCurs) {
+        this.Dt_VenCurs = Dt_VenCurs;
+    }
+
+    public String getDt_ExameMe() {
+        return Dt_ExameMe;
+    }
+
+    public void setDt_ExameMe(String Dt_ExameMe) {
+        this.Dt_ExameMe = Dt_ExameMe;
+    }
+
+    public String getDt_Psico() {
+        return Dt_Psico;
+    }
+
+    public void setDt_Psico(String Dt_Psico) {
+        this.Dt_Psico = Dt_Psico;
+    }
+
+    public String getDt_Nasc() {
+        return Dt_Nasc;
+    }
+
+    public void setDt_Nasc(String Dt_Nasc) {
+        this.Dt_Nasc = Dt_Nasc;
+    }
+
+    public String getDt_VenCNH() {
+        return Dt_VenCNH;
+    }
+
+    public void setDt_VenCNH(String Dt_VenCNH) {
+        this.Dt_VenCNH = Dt_VenCNH;
+    }
+
+    public String getRgDtEmis() {
+        return RgDtEmis;
+    }
+
+    public void setRgDtEmis(String RgDtEmis) {
+        this.RgDtEmis = RgDtEmis;
+    }
+
+    public String getCTPS_Emis() {
+        return CTPS_Emis;
+    }
+
+    public void setCTPS_Emis(String CTPS_Emis) {
+        this.CTPS_Emis = CTPS_Emis;
+    }
+
+    public String getFGTSOpcao() {
+        return FGTSOpcao;
+    }
+
+    public void setFGTSOpcao(String FGTSOpcao) {
+        this.FGTSOpcao = FGTSOpcao;
+    }
+
+    public String getDt_Demis() {
+        return Dt_Demis;
+    }
+
+    public void setDt_Demis(String Dt_Demis) {
+        this.Dt_Demis = Dt_Demis;
+    }
+
+    public String getDt_ExameCNH() {
+        return Dt_ExameCNH;
+    }
+
+    public void setDt_ExameCNH(String Dt_ExameCNH) {
+        this.Dt_ExameCNH = Dt_ExameCNH;
+    }
+
+    public String getDt_Alter() {
+        return Dt_Alter;
+    }
+
+    public void setDt_Alter(String Dt_Alter) {
+        this.Dt_Alter = Dt_Alter;
+    }
+
     public float getMatr() {
         return Matr;
     }
@@ -945,180 +1091,28 @@ public class FuncioDTO {
         this.CodPessoaWeb = CodPessoaWeb;
     }
 
-    public Date getDt_Admis() {
-        return Dt_Admis;
-    }
-
-    public void setDt_Admis(Date Dt_Admis) {
-        this.Dt_Admis = Dt_Admis;
-    }
-
-    public Date getDt_Situac() {
-        return Dt_Situac;
-    }
-
-    public void setDt_Situac(Date Dt_Situac) {
-        this.Dt_Situac = Dt_Situac;
-    }
-
-    public Date getDt_FormIni() {
-        return Dt_FormIni;
-    }
-
-    public void setDt_FormIni(Date Dt_FormIni) {
-        this.Dt_FormIni = Dt_FormIni;
-    }
-
-    public Date getDt_FormFim() {
-        return Dt_FormFim;
-    }
-
-    public void setDt_FormFim(Date Dt_FormFim) {
-        this.Dt_FormFim = Dt_FormFim;
-    }
-
-    public Date getReg_PFDt() {
-        return Reg_PFDt;
-    }
-
-    public void setReg_PFDt(Date Reg_PFDt) {
-        this.Reg_PFDt = Reg_PFDt;
-    }
-
-    public Date getDtValCNV() {
-        return DtValCNV;
-    }
-
-    public void setDtValCNV(Date DtValCNV) {
-        this.DtValCNV = DtValCNV;
-    }
-
-    public Date getDtEmissaoCNV() {
-        return DtEmissaoCNV;
-    }
-
-    public void setDtEmissaoCNV(Date DtEmissaoCNV) {
-        this.DtEmissaoCNV = DtEmissaoCNV;
-    }
-
-    public Date getDt_Recicl() {
-        return Dt_Recicl;
-    }
-
-    public void setDt_Recicl(Date Dt_Recicl) {
-        this.Dt_Recicl = Dt_Recicl;
-    }
-
-    public Date getDt_VenCurs() {
-        return Dt_VenCurs;
-    }
-
-    public void setDt_VenCurs(Date Dt_VenCurs) {
-        this.Dt_VenCurs = Dt_VenCurs;
-    }
-
-    public Date getDt_ExameMe() {
-        return Dt_ExameMe;
-    }
-
-    public void setDt_ExameMe(Date Dt_ExameMe) {
-        this.Dt_ExameMe = Dt_ExameMe;
-    }
-
-    public Date getDt_Psico() {
-        return Dt_Psico;
-    }
-
-    public void setDt_Psico(Date Dt_Psico) {
-        this.Dt_Psico = Dt_Psico;
-    }
-
-    public Date getDt_Nasc() {
-        return Dt_Nasc;
-    }
-
-    public void setDt_Nasc(Date Dt_Nasc) {
-        this.Dt_Nasc = Dt_Nasc;
-    }
-
-    public Date getDt_VenCNH() {
-        return Dt_VenCNH;
-    }
-
-    public void setDt_VenCNH(Date Dt_VenCNH) {
-        this.Dt_VenCNH = Dt_VenCNH;
-    }
-
-    public Date getRgDtEmis() {
-        return RgDtEmis;
-    }
-
-    public void setRgDtEmis(Date RgDtEmis) {
-        this.RgDtEmis = RgDtEmis;
-    }
-
-    public Date getCTPS_Emis() {
-        return CTPS_Emis;
-    }
-
-    public void setCTPS_Emis(Date CTPS_Emis) {
-        this.CTPS_Emis = CTPS_Emis;
-    }
-
-    public Date getFGTSOpcao() {
-        return FGTSOpcao;
-    }
-
-    public void setFGTSOpcao(Date FGTSOpcao) {
-        this.FGTSOpcao = FGTSOpcao;
-    }
-
-    public Date getDt_Demis() {
-        return Dt_Demis;
-    }
-
-    public void setDt_Demis(Date Dt_Demis) {
-        this.Dt_Demis = Dt_Demis;
-    }
-
-    public Date getDt_ExameCNH() {
-        return Dt_ExameCNH;
-    }
-
-    public void setDt_ExameCNH(Date Dt_ExameCNH) {
-        this.Dt_ExameCNH = Dt_ExameCNH;
-    }
-
-    public Date getDt_Alter() {
-        return Dt_Alter;
-    }
-
-    public void setDt_Alter(Date Dt_Alter) {
-        this.Dt_Alter = Dt_Alter;
-    }
-
-    public Float getRegional() {
+    public float getRegional() {
         return Regional;
     }
 
-    public void setRegional(Float Regional) {
+    public void setRegional(float Regional) {
         this.Regional = Regional;
     }
 
-    public Float getHorario() {
+    public float getHorario() {
         return Horario;
     }
 
-    public void setHorario(Float Horario) {
+    public void setHorario(float Horario) {
         this.Horario = Horario;
     }
 
-    public Float getGrpEscala() {
+    public float getGrpEscala() {
         return GrpEscala;
     }
 
-    public void setGrpEscala(Float GrpEscala) {
+    public void setGrpEscala(float GrpEscala) {
         this.GrpEscala = GrpEscala;
     }
-    
+
 }

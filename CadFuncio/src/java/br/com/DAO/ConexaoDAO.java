@@ -6,7 +6,22 @@ import java.sql.SQLException;
 
 public class ConexaoDAO {
     
-    public Connection conexaoBD() throws ClassNotFoundException{
+    
+    public Connection conexaoBD() {
+        try {
+            String url = "jdbc:mysql://localhost:3306/sistemafuncionarios?user=root&password=";
+            Connection connection = DriverManager.getConnection(url);
+            System.out.println("Connected to Database.");
+            return connection;
+            
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    
+    
+    
+    /*public Connection conexaoBD() throws ClassNotFoundException{
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -17,5 +32,5 @@ public class ConexaoDAO {
             
         }
         return con;
-    }
+    }*/
 }
