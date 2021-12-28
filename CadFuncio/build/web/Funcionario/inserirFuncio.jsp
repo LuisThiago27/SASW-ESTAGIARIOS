@@ -9,7 +9,7 @@
     
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Inserção</title>
     </head>
     <body>
         
@@ -162,14 +162,15 @@
                 objFuncioDAO.CadastrarFuncio(objFuncioDTO);
 
             } catch (Exception erro) {
-                FileWriter log = new FileWriter("C:\\temp\\log2.txt");
+                FileWriter log = new FileWriter("C:\\temp\\log.txt");
                 PrintWriter gravarArq = new PrintWriter(log);
                 gravarArq.printf("Teste");
-                System.out.println(erro);
+                System.out.println("Teste");
                 log.close();
             }
 
         %>    
-        <label>Sei se deu certo não, olha lá o PhpMyAdmin :)</label>
+        <label>Sei se deu certo não, olha lá o PhpMyAdmin :)</label><br>
+        [<a href="index.html"> Clique aqui para voltar para o Menu </a>]<br>
     </body>
 </html>

@@ -6,31 +6,16 @@ import java.sql.SQLException;
 
 public class ConexaoDAO {
     
-    
-    public Connection conexaoBD() {
-        try {
-            String url = "jdbc:mysql://localhost:3306/sistemafuncionarios?user=root&password=";
-            Connection connection = DriverManager.getConnection(url);
-            System.out.println("Connected to Database.");
-            return connection;
-            
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-    
-    
-    
-    /*public Connection conexaoBD() throws ClassNotFoundException{
-        Connection con = null;
+    public Connection conexaoBD() throws ClassNotFoundException {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/sistemafuncionarios?user=root&password=";
-            con = DriverManager.getConnection(url);
+            Connection connection = DriverManager.getConnection(url);
+            System.out.println("Conectado ao banco de dados.");
+            return connection;
             
-        } catch (SQLException e) {
-            
-        }
-        return con;
-    }*/
+        } catch (SQLException erro){
+            throw new RuntimeException(erro);
+        } 
+    }
 }

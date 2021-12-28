@@ -6,18 +6,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Consulta</title>
     </head>
     <body>
 
         <%
 
             try {
-            
+
                 FuncioDAO objFuncioDAO = new FuncioDAO();
                 ArrayList<FuncioDTO> lista = objFuncioDAO.PesquisarFuncio();
-                
-                for (int num = 0; num < lista.size() ; num++){
+
+                for (int num = 0; num < lista.size(); num++) {
                     out.print("Matrícula: " + lista.get(num).getMatr() + "<br>");
                     out.print("Nome: " + lista.get(num).getNome() + "<br>");
                     out.print("Nome_Guer: " + lista.get(num).getNome_Guer() + "<br>");
@@ -154,17 +154,17 @@
                     out.print("Operador: " + lista.get(num).getOperador() + "<br>");
                     out.print("Dt_Alter: " + lista.get(num).getDt_Alter() + "<br>");
                     out.print("Hr_Alter: " + lista.get(num).getHr_Alter() + "<br>");
-                    
-                       
+                   
+                    %> <br><br> <%
                 }
-            
-            
+
             } catch (Exception e) {
+
             }
 
         %>    
 
-
+        [<a href="index.html"> Clique aqui para voltar para o Menu </a>]<br>
 
     </body>
 </html>
