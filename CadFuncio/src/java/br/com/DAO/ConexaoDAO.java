@@ -25,7 +25,7 @@ public class ConexaoDAO {
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql//localhost:3306/sistemafuncionarios?user=root&password=";
+            String url = "jdbc:mysql://localhost:3306/sistemafuncionarios?user=root&password=";
             con = DriverManager.getConnection(url);
             
         } catch (SQLException e) {
