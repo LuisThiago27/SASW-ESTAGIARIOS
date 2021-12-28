@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1 class="title">Formulário de cadastro</h1>
+
+        <form action="/" method="POST" class='formulario'>
+            <span class="formulario__input-border"></span>
+            <label>Nome</label>
+            <input type="text" class="nome validar">
+            <span class="formulario__input-border"></span>
+            <label>Sobrenome</label>
+            <input type="text" class="sobrenome validar">
+            <span class="formulario__input-border"></span>
+            <label>CPF</label>
+            <input type="text" class="cpf validar">
+            <span class="formulario__input-border"></span>
+            <label>Usuário</label>
+            <input type="text" class="usuario validar">
+            <span class="formulario__input-border"></span>
+            <label>Senha</label>
+            <input type="password" class="senha validar">
+            <span class="formulario__input-border"></span>
+            <label>Repetir Senha</label>
+            <input type="password" class="repetir-senha validar">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="validateCPF.js"></script>
+    <script src="valid.js"></script>
+</body>
