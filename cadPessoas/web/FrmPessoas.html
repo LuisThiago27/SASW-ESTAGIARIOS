@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SISTEMA DE PESSOAS </title>
+        <title>CADASTRO</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -9,189 +9,222 @@
         
     </head>
     <body>
-        <div class ="DIV1"><strong>CADASTRO DE PESSOAS</strong></div>
+        
+        <div class ="DIV1"><strong>CADASTRO DE PESSOAS</strong>
+            
+    
+        </div>
         <form action = "InserirPessoa.jsp" method="POST">   
-            <div class ="DIV2">
+            <div class ="DIV2"> <br>
                 
             <div class ="row">
                 
             <div class ="col-2">
             <label>Nome</label> <br>
-            <input type ="text" name ="nome" required>
+            <input type ="text" name ="nome" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
             <label>Situação</label> <br>
-            <input type ="text" name ="situacao" required>
+            <input type ="text" name ="situacao" class = "form-control"required>
             <br>
             </div>
             
             <div class ="col-2">
             <label>Data Situação</label> <br>
-            <input type ="text" name ="dt_Situac" required>
+            <input type ="text" name ="dt_Situac" class = "form-control"required>
             <br>
             </div>
             
             <div class ="col-2">
             <label>Endereço</label> <br>
-            <input type ="text" name ="endereco" required>
+            <input type ="text" name ="endereco" class = "form-control"required>
             <br>
             </div>
             
             <div class ="col-2">
-            <label>Numero</label> <br>
-            <input type ="text" name ="numero" pattern="[0-9]">
+            <label>Número</label> <br>
+            <input type ="text" name ="numero" class = "form-control"required>
             <br>
             </div>
             
             <div class ="col-2">
             <label>Bairro</label> <br>
-            <input type ="text" name ="bairro" required>
+            <input type ="text" name ="bairro" class = "form-control"required>
             <br>
             </div>
             
             <div class ="col-2">
             <label>Cidade</label> <br>
-            <input type ="text" name ="cidade" required>
+            <input type ="text" name ="cidade" class = "form-control"required>
             <br>
             </div>
             
             <div class ="col-2">
              <label>Complemento</label> <br>
-            <input type ="text" name ="complemento">
+             <input type ="text" name ="complemento"class = "form-control" placeholder="Opcional">
             <br>
             </div>
             
             <div class ="col-2">
              <label>Codigo Cidade</label> <br>
-            <input type ="text" name ="codcidade" pattern="[0-9]">
+            <input type ="text" name ="codcidade" pattern="[0-9]" class = "form-control"required>
             <br>
             </div>
             
             <div class ="col-2">
              <label>UF</label> <br>
-             <input type ="text" name ="uf" >
+             <select name="uf" id="uf" class = "form-control" required>
+                <option value="">Selecione</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AM">AM</option>
+                <option value="AP">AP</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MG">MG</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="PR">PR</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SE">SE</option>
+                <option value="SP">SP</option>
+                <option value="TO">TO</option>
+            </select>
             <br>
             </div>
             
             <div class ="col-2">
              <label>CEP</label> <br>
-            <input type ="text" name ="cep" required pattern= "\d{5}-?\d{3}" placeholder="73015419">
+            <input type ="text" name ="cep"  pattern= "\d{5}-?\d{3}" placeholder="xxxxxxxx" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
              <label>Fone 1 </label> <br>
-            <input type ="tel" name ="fone1" pattern="^\d{11}$" placeholder="99999999999">  
+            <input type ="tel" name ="fone1" pattern="^\d{11}$" placeholder="xxxxxxxxxxx" class = "form-control" required>  
             <br>
             </div>
             
             <div class ="col-2">
              <label>Fone 2 </label> <br>
-            <input type ="tel" name ="fone2" pattern="^\d{11}$" placeholder="99999999999"> 
+            <input type ="tel" name ="fone2" pattern="^\d{11}$" placeholder="xxxxxxxxx" class = "form-control" required> 
             <br>
             </div>
             
             <div class ="col-2">
             <label>Email </label> <br>
-            <input type ="email" name ="email" placeholder="abc@gmail.com">
+            <input type ="email" name ="email" placeholder="exemplo@gmail.com" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
             <label>Região </label> <br>
-            <input type ="text" name ="regiao">
+            <input type ="text" name ="regiao" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
              <label>Estado Civil </label> <br>
-            <input type ="text" name ="estcivil">
+            <input type ="text" name ="estcivil" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
              <label>Conjuge </label> <br>
-            <input type ="text" name ="conjuge">
+            <input type ="text" name ="conjuge" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
              <label>Pai </label> <br>
-            <input type ="text" name ="pai">
+            <input type ="text" name ="pai" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
              <label>Mae </label> <br>
-            <input type ="text" name ="mae">
+            <input type ="text" name ="mae" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
              <label>RG</label> <br>
-            <input type ="text" name ="rg">
+            <input type ="text" name ="rg" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
              <label>RG ORG Emissao</label> <br>
-            <input type ="text" name ="rgorgemis">
+            <input type ="text" name ="rgorgemis" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
              <label>Rg Dt Emissao</label> <br>
-            <input type ="text" name ="rgdtemis">
+            <input type ="text" name ="rgdtemis" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
             <label>CPF</label> <br>
-            <input type ="cpf" name ="cpf" pattern="^\d{11}$" placeholder="Digite seu CPF">
+            <input type ="cpf" name ="cpf" pattern="^\d{11}$" placeholder="Digite seu CPF" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
             <label>Titulo Eleitor</label> <br>
-            <input type ="text" name ="titeleit">
+            <input type ="text" name ="titeleit" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
             <label>Titulo Zona</label> <br>
-            <input type ="text" name ="titzona">
+            <input type ="text" name ="titzona" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
             <label>Titulo Seção</label> <br>
-            <input type ="text" name ="titsecao">
+            <input type ="text" name ="titsecao" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2">
             <label>PIS</label> <br>
-            <input type ="text" name ="pis" > 
+            <input type ="text" name ="pis" class = "form-control" required> 
             <br>
             </div>
             
             <div class ="col-2">
             <label>CNH</label> <br>
-            <input type ="text" name ="cnh" >
+            <input type ="text" name ="cnh" class = "form-control" required> 
             <br>
             </div>
             
             <div class ="col-2">   
             <label>CNH Dt Venc</label> <br>
-            <input type ="date" name ="cnhdtvenc">
+            <input type ="date" name ="cnhdtvenc" class = "form-control" required>
             <br>
             </div>
                 
             <div class ="col-2">
             <label>CNHCat</label> <br>
-            <input type ="text" name ="cnhcat">
+            <input type ="text" name ="cnhcat" class = "form-control" required>
             <br>
             </div> 
             </div>
@@ -202,145 +235,146 @@
             <div class ="row"> 
             <div class ="col-2"
             <label>Reservista</label> <br>
-            <input type ="text" name ="reservista">
+            <input type ="text" name ="reservista" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>ReservCat</label> <br>
-            <input type ="text" name ="reservcat">
+            <input type ="text" name ="reservcat" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>CTPS Nro</label> <br>
-            <input type ="text" name ="ctps_nro">
+            <input type ="text" name ="ctps_nro" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>CTPS Serie</label> <br>
-            <input type ="text" name ="ctps_serie">
+            <input type ="text" name ="ctps_serie" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>CTPS UF</label> <br>
-            <input type ="text" name ="ctps_uf">
+            <input type ="text" name ="ctps_uf" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>CTPS Emis</label> <br>
-            <input type ="date" name ="ctps_emis">
+            <input type ="date" name ="ctps_emis" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Data nascimento</label> <br>
-            <input type ="date" name ="dt_nasc">
+            <input type ="date" name ="dt_nasc" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Naturalidde</label> <br>
-            <input type ="text" name ="naturalid">
+            <input type ="text" name ="naturalid" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Instrução</label> <br>
-            <input type ="text" name ="instrucao">
+            <input type ="text" name ="instrucao" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Sexo</label> <br>
-            <input type ="text" name ="sexo">
+           
+            <input type ="text" name ="sexo" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Raça</label> <br>
-            <input type ="text" name ="raca">
+            <input type ="text" name ="raca" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>GrupoSang</label> <br>
-            <input type ="text" name ="gruposang">
+           <input type ="text" name ="gruposang" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Altura</label> <br>
-            <input type ="text" name ="altura">
+            <input type ="text" name ="altura" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Peso</label> <br>
-            <input type ="text" name ="peso">
+            <input type ="text" name ="peso" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Indicacao</label> <br>
-            <input type ="text" name ="indicacao">
+            <input type ="text" name ="indicacao" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Dt_FormIni</label> <br>
-            <input type ="date" name ="dt_formini">
+            <input type ="date" name ="dt_formini" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Dt_FormFim</label> <br>
-            <input type ="date" name ="setdt_formfim">
+            <input type ="date" name ="setdt_formfim" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>LocalForm</label> <br>
-            <input type ="text" name ="localform">
+            <input type ="text" name ="localform" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Certific</label> <br>
-            <input type ="text" name ="certific">
+            <input type ="text" name ="certific" class = "form-control"required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Reg_PF</label> <br>
-            <input type ="text" name ="reg_pf">
+            <input type ="text" name ="reg_pf" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Reg_PFUF</label> <br>
-            <input type ="text" name ="reg_pfuf">
+            <input type ="text" name ="reg_pfuf" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>Reg_PFDt</label> <br>
-            <input type ="date" name ="reg_pfdt">
+            <input type ="date" name ="reg_pfdt" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>CarNacVig</label> <br>
-            <input type ="text" name ="carnacvig">
+            <input type ="text" name ="carnacvig" class = "form-control" required>
             <br>
             </div>
             
             <div class ="col-2"
             <label>DtValCNV</label> <br>
-            <input type ="date" name ="dtvalcnv">
+            <input type ="date" name ="dtvalcnv" class = "form-control" required>
             <br>
             </div>
             </div>
@@ -349,190 +383,377 @@
             
             <div class ="DIV4">
             
+            <div class ="row">  
+            <div class ="col-2">
             <label>DtEmissaoCNV</label> <br>
-            <input type ="date" name ="dtemissaocnv">
+            <input type ="date" name ="dtemissaocnv" class = "form-control" required>
             <br>
-  
+             </div>
+            
+            <div class ="col-2">
             <label>CadastroAFIS</label> <br>
-            <input type ="text" name ="cadastroafis">
+            <input type ="text" name ="cadastroafis" class = "form-control" required>
             <br>
-     
+             </div>
+            
+           
+            <div class ="col-2">
             <label>Reg_DRT</label> <br>
-            <input type ="text" name ="ref_drt">
+            <input type ="text" name ="ref_drt" class = "form-control" required>
             <br>
+             </div>
         
+            <div class ="col-2">
             <label>Dt_Recicl</label> <br>
-            <input type ="date" name ="dt_recicl">
+            <input type ="date" name ="dt_recicl" class = "form-control" required> 
             <br>
+             </div>
+            
+            <div class ="col-2">
             <label>Dt_VenCurs</label> <br>
-            <input type ="date" name ="dr_vencurs">
+            <input type ="date" name ="dr_vencurs" class = "form-control" required> 
             <br>
+             </div>
+            
+            <div class ="col-2">
             <label>Dt_ExameMe</label> <br>
-            <input type ="date" name ="dt_exameme">
+            <input type ="date" name ="dt_exameme" class = "form-control" required>
             <br>
+             </div>
+            
+            <div class ="col-2">
             <label>Dt_Psico</label> <br>
-            <input type ="date" name ="dr_psico">
+            <input type ="date" name ="dr_psico" class = "form-control"required> 
             <br>
+             </div>
+            
+            <div class ="col-2">
             <label>ExtTV</label> <br>
-            <input type ="text" name ="setexttv">
+            <input type ="text" name ="setexttv" class = "form-control"required>
             <br>
+             </div>
+            
+            <div class ="col-2">
             <label>ExtSPP</label> <br>
-            <input type ="text" name ="extspp">
+            <input type ="text" name ="extspp" class = "form-control"required>
             <br>
+             </div>
+            
+            <div class ="col-2">
             <label>ExtEscolta</label> <br>
-            <input type ="text" name ="extescolta">
+            <input type ="text" name ="extescolta" class = "form-control"required>
             <br>
+             </div>
+            
+            <div class ="col-2">
             <label>ExtGrdEventos</label> <br>
-            <input type ="text" name ="extgrdeventos">
+            <input type ="text" name ="extgrdeventos" class = "form-control"required>
             <br>
+             </div>
+            
+            <div class ="col-2">
             <label>ExtArmasNLetais</label> <br>
-            <input type ="text" name ="extarmasnletais">
+            <input type ="text" name ="extarmasnletais" class = "form-control"required>
             <br>
+             </div>
+            
+            <div class ="col-2">
             <label>Obs</label> <br>
-            <input type ="text" name ="obs">
+            <input type ="text" name ="obs" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Funcao</label> <br>
-            <input type ="text" name ="funcao">
+            <input type ="text" name ="funcao" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Matr</label> <br>
-            <input type ="text" name ="matr">
+            <input type ="text" name ="matr" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dig01</label> <br>
-            <input type ="text" name ="dig01">
+            <input type ="text" name ="dig01" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dig02</label> <br>
-            <input type ="text" name ="dig02">
+            <input type ="text" name ="dig02" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dig03</label> <br>
-            <input type ="text" name ="dig03">
+            <input type ="text" name ="dig03" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dig04</label> <br>
-            <input type ="text" name ="dig04">
+            <input type ="text" name ="dig04" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dig05</label> <br>
-            <input type ="text" name ="dig05">
+            <input type ="text" name ="dig05" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dig06</label> <br>
-            <input type ="text" name ="dig06">
+            <input type ="text" name ="dig06" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dig07</label> <br>
-            <input type ="text" name ="dig07">
+            <input type ="text" name ="dig07" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dig08</label> <br>
-            <input type ="text" name ="dig08">
+            <input type ="text" name ="dig08" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dig09</label> <br>
-            <input type ="text" name ="dig09">
+            <input type ="text" name ="dig09" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dig10</label> <br>
-            <input type ="text" name ="dig10">
+            <input type ="text" name ="dig10" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>PW</label> <br>
-            <input type ="password" name ="pw" placeholder="Digite sua senha">
+            <input type ="password" name ="pw" placeholder="Digite uma senha..." class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Bottom</label> <br>
-            <input type ="text" name ="bottom">
+            <input type ="text" name ="bottom" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>BottomII</label> <br>
-            <input type ="text" name ="bottomii">
+            <input type ="text" name ="bottomii" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>CodPrest</label> <br>
-            <input type ="text" name ="codprest">
+            <input type ="text" name ="codprest" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>CodVisit</label> <br>
-            <input type ="text" name ="codvisit">
+            <input type ="text" name ="codvisit" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>PretSalario</label> <br>
-            <input type ="text" name ="pretsalario">
+            <input type ="text" name ="pretsalario" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Apresen</label> <br>
-            <input type ="text" name ="apresen">
+            <input type ="text" name ="apresen" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Ct_Banco</label> <br>
-            <input type ="text" name ="ct_banco">
+            <input type ="text" name ="ct_banco" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Ct_Agencia</label> <br>
-            <input type ="text" name ="ct_agencia">
+            <input type ="text" name ="ct_agencia" class = "form-control"required> 
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Ct_Conta</label> <br>
-            <input type ="text" name ="ct_conta">
+            <input type ="text" name ="ct_conta" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Regional</label> <br>
-            <input type ="text" name ="regional">
+            <input type ="text" name ="regional" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>PWWeb</label> <br>
-            <input type ="text" name ="pwweb">
+            <input type ="password" name ="pwweb" placeholder="Digite uma senha..." class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>CargoPretend</label> <br>
-            <input type ="text" name ="cargopretend">
+            <input type ="text" name ="cargopretend" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>SecaoPretend</label> <br>
-            <input type ="text" name ="secaopretend">
+            <input type ="text" name ="secaopretend" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>EscalaPretend</label> <br>
-            <input type ="text" name ="escalapretend">
+            <input type ="text" name ="escalapretend" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>HorarioPretend</label> <br>
-            <input type ="text" name ="horariopretend">
+            <input type ="text" name ="horariopretend" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>SindicatoPdr</label> <br>
-            <input type ="text" name ="sindicatopdr">
+            <input type ="text" name ="sindicatopdr" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>CodFilPretend</label> <br>
-            <input type ="text" name ="codfilpretend">
+            <input type ="text" name ="codfilpretend" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>PWPortal</label> <br>
-            <input type ="text" name ="pwportal">
+            <input type ="password" name ="pwportal" placeholder="Digite uma senha..." class = "form-control"required>
             <br>
+            </div>
+           
+            <div class ="col-2">
             <label>PwTickets</label> <br>
-            <input type ="text" name ="pwtickets">
+            <input type ="password" name ="pwtickets"  placeholder="Digite uma senha..." class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dt_UltAcPortal</label> <br>
-            <input type ="date" name ="dt_ultacportal">
+            <input type ="date" name ="dt_ultacportal" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>CodSatellite</label> <br>
-            <input type ="text" name ="codsatellite">
+            <input type ="text" name ="codsatellite" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>CodPessoaWEB</label> <br>
-            <input type ="text" name ="codpessoaweb">
+            <input type ="text" name ="codpessoaweb" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>CodAlimentacao</label> <br>
-            <input type ="text" name ="codalimentacao">
+            <input type ="text" name ="codalimentacao" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Chavebancaria</label> <br>
-            <input type ="text" name ="chavebancaria">
+            <input type ="text" name ="chavebancaria" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Secao</label> <br>
-            <input type ="text" name ="secao">
+            <input type ="text" name ="secao" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>CodFilPST</label> <br>
-            <input type ="text" name ="codfilpst">
+            <input type ="text" name ="codfilpst" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>CodCli</label> <br>
-            <input type ="text" name ="codcli">
+            <input type ="text" name ="codcli" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>EnvPontoWhp</label> <br>
-            <input type ="text" name ="envpontowhp">
+            <input type ="text" name ="envpontowhp" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>EnvPontoEmail</label> <br>
-            <input type ="text" name ="envpontoemail">
+            <input type ="text" name ="envpontoemail" class = "form-control"required> 
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Operador</label> <br>
-            <input type ="text" name ="operador">
+            <input type ="text" name ="operador" class = "form-control"required> 
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Dt_Alter</label> <br>
-            <input type ="text" name ="dt_alter">
+            <input type ="text" name ="dt_alter" class = "form-control"required>
             <br>
+            </div>
+            
+            <div class ="col-2">
             <label>Hr_Alter</label> <br>
-            <input type ="text" name ="hr_alter">
-           </div>
+            <input type ="time" name ="hr_alter" class = "form-control"required>
+            </div>
+            </div>
+            </div>
             
             
             <br><br>
-            <button type = "submit">ENVIAR</button>
-            <a href="index.html">Voltar</a>
+            
+            <div class ="button1">
+                <button type = "submit" class ="btn btn2">ENVIAR</button> <br><br>
+            </div>
+            
+            
            
         </form>
+      
+        <div class ="button2">
+            <a href ="index.html"><button class ="btn btn2">VOLTAR</button></a><br><br>
+        </div>
+        
+        
+          
+        <a href="#" class="btn3"></a>
+        
+           
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
                 
     </body>

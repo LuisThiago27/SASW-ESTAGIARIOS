@@ -1,28 +1,170 @@
-.DIV1 {
+form {
     
-    background-color: #666666;
-    text-align: center;
-    font-size: 25px;
-    font-family: arial;
-    color: white;
+    background-color: #99ccff;
 
 }
 
+.DIV1 {
+    
+    background-color: #009999;
+    text-align: center;
+    font-size: 25px;
+    font-family: arial;
+    color: black;
+    font-family: DejaVu Sans Mono, monospace;
+    
+
+}
+
+
 .DIV2 {
     color:black;
-    background-color: #cccccc;
+    background-color: #99ccff;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: DejaVu Sans Mono, monospace;
     
 }
 
 .DIV3 {
     
     color:black;
-    background-color: #cccccc;
+    background-color: #99ccff;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: DejaVu Sans Mono, monospace;
 }
 
 .DIV4 {
     
     color:black;
-    background-color: #cccccc;
+    background-color: #99ccff;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: DejaVu Sans Mono, monospace;
+    
+}
+.form-control {
+    
+    border: 2px solid black;
+    
+}
+
+/*botoes do FrmPessoas.html*/
+
+.button1 {
+    text-align: center;
+    background-color: #99ccff;
+    
+}
+
+
+.button2 {
+    
+    text-align: center;
+    background-color: #99ccff;
+    
+}
+
+.btn {
+    
+    background-color: #009999;
+    color: white;
+    
+}
+
+.btn3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #009999;
+    text-decoration: none;
+}
+
+.btn3::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    transition: margin-top 250ms;
+}
+
+.btn3:hover::after {
+    margin-top:-8px;
+}
+
+/*index.html*/
+
+.divindexhtml {
+   
+    text-align: center; 
+    margin-top: 20%;
+    height: 20%;
+    border-width: 20px;
+    
+}
+
+.indexjsp {
+    
+    border: 2px solid black;
+    margin: 2%;
+    display: block;
+    margin-top: 2%;
+    padding: 0.2%;
+    background-color: #009999;
+    font-size: medium;
+    
+}
+
+.col-1 {
+     
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 24px;
+  text-align: center;
+  margin-left: 45px;
+  font-family: DejaVu Sans Mono, monospace;
+  
+
+}
+
+.listapessoas {
+    
+    background-color: #99ccff;
+    
+    
+}
+
+.tituloListaPessoas {
+    
+    
+    text-align: center;
+    font-size: 25px;
+    font-family: Courier, monospace;
+    color: black;
+    padding-top: 2%;
  
+}
+
+.buttonlistapessoa {
+    
+    border:1px solid #25692A;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Verdana;
+    font-weight:bold;
+    font-size:13px;
+    padding:6px 10px;
+      
 }

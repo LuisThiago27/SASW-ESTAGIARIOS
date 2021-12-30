@@ -170,6 +170,14 @@ public class PessoaDAO {
             PessoaDTO objPessoaDTO = new PessoaDTO();
             objPessoaDTO.setId_codigo(rs.getInt("id_codigo"));
             objPessoaDTO.setnome(rs.getString("nome"));
+            objPessoaDTO.setSituacao(rs.getString("Situacao"));
+            objPessoaDTO.setDt_Situac(rs.getString("Dt_Situac"));
+            objPessoaDTO.setEndereco(rs.getString("Endereco"));
+            objPessoaDTO.setNumero(rs.getString("Numero"));
+            objPessoaDTO.setBairro(rs.getString("Bairro"));
+            objPessoaDTO.setCidade(rs.getString("Cidade"));
+            objPessoaDTO.setComplemento(rs.getString("Complemento"));
+            
             
             lista.add(objPessoaDTO);
             
@@ -205,14 +213,24 @@ public class PessoaDAO {
     
         public void AlterarPessoa (PessoaDTO objPessoaDTO) throws ClassNotFoundException{
         
-        String sql = "update pessoasteste set nome = ? where id_codigo = ?";
+        String sql = "update pessoasteste set nome = ?, Situacao = ?, Dt_Situac = ? , Endereco =?, "
+                    + "Numero = ?, Bairro=?, Cidade = ?, Complemento = ?  where id_codigo = ?";
         con = new ConexaoDAO().conexaoBD();
         
         try {
             
             pstm = con.prepareStatement(sql);
             pstm.setString (1, objPessoaDTO.getnome());
-            pstm.setInt (2, objPessoaDTO.getId_codigo());
+            pstm.setString (2, objPessoaDTO.getSituacao());
+            pstm.setString (3, objPessoaDTO.getDt_Situac());
+            pstm.setString (4, objPessoaDTO.getEndereco());
+            pstm.setString (5, objPessoaDTO.getNumero());
+            pstm.setString (6, objPessoaDTO.getBairro());
+            pstm.setString (7, objPessoaDTO.getCidade());
+            pstm.setString (8, objPessoaDTO.getComplemento());
+                
+            
+            pstm.setInt (9, objPessoaDTO.getId_codigo());
             
             
             

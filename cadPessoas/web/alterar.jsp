@@ -18,6 +18,14 @@
                  
                     objPessoaDTO.setId_codigo(Integer.parseInt(request.getParameter("id")));
                     objPessoaDTO.setNome(request.getParameter("nome"));
+                    objPessoaDTO.setSituacao(request.getParameter("situacao"));
+                    objPessoaDTO.setDt_Situac(request.getParameter("dt_Situac"));
+                    objPessoaDTO.setEndereco(request.getParameter("endereco"));
+                    objPessoaDTO.setNumero(request.getParameter("numero"));
+                    objPessoaDTO.setBairro(request.getParameter("bairro"));
+                    objPessoaDTO.setCidade(request.getParameter("cidade"));
+                    objPessoaDTO.setComplemento(request.getParameter("complemento"));
+                    
                    
                     PessoaDAO objPessoaDAO = new PessoaDAO();
                     objPessoaDAO.AlterarPessoa(objPessoaDTO);
