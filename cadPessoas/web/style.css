@@ -13,6 +13,7 @@ form {
     color: black;
     font-family: DejaVu Sans Mono, monospace;
     
+    
 
 }
 
@@ -50,6 +51,7 @@ form {
 .form-control {
     
     border: 2px solid black;
+    
     
 }
 
@@ -110,6 +112,7 @@ form {
     margin-top: 20%;
     height: 20%;
     border-width: 20px;
+    border:2px solid black;
     
 }
 
@@ -168,3 +171,17 @@ form {
     padding:6px 10px;
       
 }
+
+.botaoindex2 {
+    
+    text-align: center;
+    
+    
+}
+
+
+
+
+
+
+

@@ -4,9 +4,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
         <title>ALTERAR PESSOAS</title>
-    </head>
-    <body>
+    <body >
          <form action ="alterar.jsp" method="POST">
              
             <label>Codigo: </label> <br>

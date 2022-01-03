@@ -15,6 +15,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Sistema Pessoas</title>
     </head>
+    <a href="InserirPessoa.jsp"></a>
 
         <%
            try {
@@ -144,7 +145,7 @@
                }
     
         %>   
-        <form>Cadastrado com Sucesso!!!</form>
+        
         <a href="index.html">Voltar</a>
     
 </html>

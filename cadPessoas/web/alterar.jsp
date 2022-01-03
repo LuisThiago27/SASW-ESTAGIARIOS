@@ -36,7 +36,7 @@
                }
     
         %>     
-        <form>Alterado com Sucesso!!!</form>
+        
         <a href="listaPessoas.jsp">Voltar</a>
     </body>
 </html>
