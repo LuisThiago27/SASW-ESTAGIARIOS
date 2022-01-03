@@ -31,7 +31,13 @@
             
             <div class ="col-2">
             <label>Situação</label> <br>
-            <input type ="text" name ="situacao" maxlength="1" class = "form-control" required>
+            
+            <select name="uf" id="situacao" class = "form-control" required>
+                <option value="">Selecione</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            <select 
             
             <br>
             </div>
@@ -174,7 +180,7 @@
             
             <div class ="col-2">
             <label>Região </label> <br>
-            <input type ="text" name ="regiao" class = "form-control" s>
+            <input type ="text" name ="regiao" class = "form-control" >
             <br>
             </div>
             
@@ -204,7 +210,7 @@
             
             <div class ="col-2">
              <label>RG</label> <br>
-             <input oninput="mask_rg(this)" type ="text" name ="rg" pattern="^\d{7}$" placeholder ="Digite seu RG..." class = "form-control" required>
+             <input oninput="mask_rg(this)" type ="text" name ="rg" maxlength="20"placeholder ="Digite seu RG..." class = "form-control" required>
             <br>
 
             </div>
@@ -270,7 +276,7 @@
             
             <div class ="col-2">
             <label>CNH</label> <br>
-            <input type ="text" name ="cnh" maxlength="14" placeholder ="Digite sua CNH..." class = "form-control" > 
+            <input type ="text" name ="cnh" maxlength="11" placeholder ="Digite sua CNH..." class = "form-control" > 
             
             <br>
             </div>
@@ -349,7 +355,7 @@
             
             <div class ="col-2"
             <label>Sexo</label> <br>
-            <select name="sexo" id="sexo" class = "form-control" >
+            <select name="sexo" id="sexo" class = "form-control" required>
                 <option value="">Selecione</option>
                 <option value="M">M</option>
                 <option value="F">F</option>
