@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section class="container">
+        <h1 class="title">Login</h1>
+
+        <form action="/" method="POST" class='formulario'>
+            <label>Nome Completo</label>
+            <input type="text" class="nome validar" placeholder="Escreva seu nome completo" maxlength="69">
+            <label>E-mail</label>
+            <input type="email" class="sobrenome validar" placeholder="Escreva seu e-mail (ex: joaodasilva@gmail.com)">
+            <label>CPF</label>
+            <input oninput="mascara_cpf(this)" type="text" class="cpf validar" placeholder="Digite seu CPF" maxlength="14" autocomplete="off">
+            <label>Telefone</label>
+            <input oninput="mascara_tel(this)" type="text" class="usuario validar" placeholder="Ex: (00) 00000-0000" >
+            <label>Senha</label>
+            <input type="password" class="senha validar" placeholder="Digite sua senha" maxlength="10">
+            <button type="submit" class="button" onclick="redirecionar()">Enviar</button>
+        </form>
+    </section>
+
+    <script>
+        function redirecionar(){
+           window.location.href = "http://127.0.0.1:5501/pag2/tela2.html";
+        }
+    </script>
+
+    <script>
+        function mascara_cpf(i){
+   
+   var v = i.value;
+   
+   if(isNaN(v[v.length-1])){ 
+      i.value = v.substring(0, v.length-1);
+      return;
+   }
+   
+   i.setAttribute("maxlength", "14");
+   if (v.length == 3 || v.length == 7) i.value += ".";
+   if (v.length == 11) i.value += "-";
+
+}
+    </script>
+    <script>
+        function mascara_tel(i){
+   
+   var v = i.value;
+   
+   if(isNaN(v[v.length-1])){ 
+      i.value = v.substring(0, v.length-1);
+      return;
+   }
+   
+   i.setAttribute("maxlength", "14");
+   if (v.length == 1 ) i.value = "(";
+   if (v.length == 3 ) i.value += ")";
+   if (v.length == 9) i.value += "-";
+
+}
+    </script>
+
+
+
+    <script src="validateCPF.js"></script>
+    <script src="valid.js"></script>
+</body>
+</html>
